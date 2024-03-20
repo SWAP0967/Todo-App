@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO_APP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./todoapp.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todotitle mt-3">
+        <h1 id="title">MY TODO APP</h1>
+      </div>
+      <div class="todoinput pt-2">
+        <input
+        class="inputbox"
+          type="text"
+          id="input"
+          name="entertask"
+          placeholder="Add A New Task"
+        />
+        <button type="button" class="button addbutton" click="add()">Add</button>
+      </div>
+      <div id="errorMessage" style="color: red "></div>
+     
+      <div class="taskbuttons mt-5 mb-5">
+        
+        <button type="button" class=" button completedbutton mr-4">Completed Task</button>
+        <button type="button" class=" button alltaskbutton mr-4">All Task</button>
+        <button type="button" class="button clearall mr-4">Clear All</button>
+        <button type="button" class="button pendingbutton">Pending Task</button>
+       
+      </div>
+      </div>
+      <div class="container-fluid">
+        <ul class="tasklist"></ul>
+      </div>
+   
+
+    <script src="./todoapp.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
